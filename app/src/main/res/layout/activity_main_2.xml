@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="50dp"
+            android:layout_gravity="center_vertical|bottom"
+            android:gravity="center_vertical|right"
+            android:id="@+id/textSum" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:gravity="center_vertical|right"
+            android:id="@+id/textResult" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#50e9c0"
+        android:id="@+id/operatorsRow"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="30dp"
+            android:id="@+id/btnPlus"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="30dp"
+            android:id="@+id/btnMinus"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="÷"
+            android:textSize="30dp"
+            android:id="@+id/btnDivide"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="x"
+            android:textSize="30dp"
+            android:id="@+id/btnMultiply"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#4d4d4d"
+        android:orientation="horizontal"
+        android:weightSum="6">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:weightSum="4"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="7"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp"
+                        android:layout_weight="1"
+                    android:id="@+id/btnSeven"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="8"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnEight"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="9"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnNine"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnFour"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnFive"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="6"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnSix"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnOne"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnTwo"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="3"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnThree"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="."
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnDecimalPoint"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnZero"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:layout_weight="1"
+                    style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                    android:text="CLR"
+                    android:id="@+id/btnClearAll" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#6e6e6e"
+            android:weightSum="3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="30dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="="
+                android:textSize="50dp"
+                android:id="@+id/btnEquals"
+                android:gravity="center"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
